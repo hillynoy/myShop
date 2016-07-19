@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-app="myShop" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.angularjs.org/1.5.7/angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" src="shop.css">
+</head>
+
+<body>
+
+<div data-ng-controller="myCtrl">
+
+<div class="myProduct" data-ng-repeat="p in products">{{p.title}}  {{p.info}} {{p.price}}
+    <img class="myImage" data-ng-src = '{{ p.img.src }}'/>
+</div>
+</div>
+
+
+</body>
+</html>
