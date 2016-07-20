@@ -1,0 +1,29 @@
+<ul>
+    <li class="myProduct" data-ng-repeat= "p in products">
+        <a href="#/{{p.id}}">
+            <div class="productWrapper" col-lg-4>
+            <div class="myPic">
+                <img class="myImage" data-ng-src = '{{p.img.src}}'/>
+            </div>
+
+            <div class="productRight">
+<span>
+                <div class="myTitle">
+                    {{p.title}}
+                </div>
+
+                <div class="myPrice">
+                    {{p.price | currency}}
+                </div>
+</span>
+                <!--<div class="myInfo"> <a href ng-click= "tab = p.info">Info</a>-->
+                    <!--<p>{{tab}}</p>-->
+                <!--</div>-->
+
+                <button class="btn btn-primary" ng-click="count= count+1">Eat me!</button>
+                <p>{{count}}</p>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,21 @@
+<div class="myPic">
+    <img class="myImage" data-ng-src = '{{p.img.src}}'/>
+</div>
+
+<div class="productRight">
+
+    <div class="myTitle">
+        {{p.title}}
+    </div>
+
+    <div class="myPrice">
+        {{p.price | currency}}
+    </div>
+
+    <div class="myInfo"> <a href ng-click= "tab = p.info">Info</a>
+        <p>{{tab}}</p>
+    </div>
+
+    <button class="btn btn-primary" ng-click="count= count+1">Eat me!</button>
+    <p>{{count}}</p>
+</div>

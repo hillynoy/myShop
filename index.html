@@ -4,47 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://code.angularjs.org/1.5.7/angular.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular-route.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="shop.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-<div class="container-fluid">
-    <div ng-controller="StoreController as store">
-        <div class="navBar">
-            the navigation bar will be here.....
-        </div>
-        <ul ng-init="tab = p.info">
-            <li class="myProduct" data-ng-repeat= "p in products">
-                <div class="productWrapper">
+<body class="container-fluid">
+<div ng-controller="StoreController">
 
-                    <div class="myPic">
-                        <img class="myImage" data-ng-src = '{{ p.img.src }}'/>
-                    </div>
+    <div class="navbar col-lg-12" ng-include="'partials/navbar.html'"></div>
 
-                    <div class="productRight">
+    <div class="mainPage col-lg-12" ng-view></div>
 
-                        <div class="myTitle">
-                            {{p.title}}
-                        </div>
-
-                        <div class="myPrice">
-                            {{p.price | currency}}
-                        </div>
-
-                        <div class="myInfo"> <a href ng-click= "tab= p.info">Info </a>
-                          <p>{{tab}} </p>
-                        </div>
-
-                        <button class="btn btn-primary">Eat me!</button>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <!--<div class="rightSider col-lg-1" ng-include="'partials/rightSider.html'"></div>-->
 </div>
-
 </body>
 </html>
 
