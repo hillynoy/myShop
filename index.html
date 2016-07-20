@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html data-ng-app="myShop" lang="en">
+<html ng-app="myShop" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://code.angularjs.org/1.5.7/angular.js"></script>
     <script src="app.js"></script>
-    <link rel="stylesheet" src="shop.css">
+    <script src="angular-route.js"></script>
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+<div class="container-fluid">
+    <div ng-controller="StoreController as store">
+        <div class="navBar">
+            the navigation bar will be here.....
+        </div>
 
-<div data-ng-controller="myCtrl">
-
-<div class="myProduct" data-ng-repeat="p in products">{{p.title}}  {{p.info}} {{p.price}}
-    <img class="myImage" data-ng-src = '{{ p.img.src }}'/>
+        <div ng-view></div>
+    </div>
 </div>
-</div>
-
 
 </body>
 </html>
+

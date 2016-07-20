@@ -1,11 +1,43 @@
+body {
+    max-width: 80%;
+}
+
+.allProducts {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
 .myProduct {
     display: inline-block;
-    border-radius: 5%;
+    width:100px;
+    height: 100px;
+    border-radius: 5px;
     border: 5px solid lightgrey;
 }
 
-.myImage {
-    width: 15px;
-    height: 20px;
+img.myImage {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+}
+
+div.myPic {
+    display: inline-block;
+}
+
+.productWrapper {
+display: block;
+    border: 2px crimson;
+}
+
+.productRight {
+    display: block;
+}
+
+.navBar {
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
 
 }
