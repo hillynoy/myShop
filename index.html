@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="myShop" lang="en">
+<html data-ng-app="myShop" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://code.angularjs.org/1.5.7/angular.js"></script>
     <script src="app.js"></script>
-    <script src="angular-route.js"></script>
     <link rel="stylesheet" href="shop.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -16,8 +15,33 @@
         <div class="navBar">
             the navigation bar will be here.....
         </div>
+        <ul ng-init="tab = p.info">
+            <li class="myProduct" data-ng-repeat= "p in products">
+                <div class="productWrapper">
 
-        <div ng-view></div>
+                    <div class="myPic">
+                        <img class="myImage" data-ng-src = '{{ p.img.src }}'/>
+                    </div>
+
+                    <div class="productRight">
+
+                        <div class="myTitle">
+                            {{p.title}}
+                        </div>
+
+                        <div class="myPrice">
+                            {{p.price | currency}}
+                        </div>
+
+                        <div class="myInfo"> <a href ng-click= "tab= p.info">Info </a>
+                          <p>{{tab}} </p>
+                        </div>
+
+                        <button class="btn btn-primary">Eat me!</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 
