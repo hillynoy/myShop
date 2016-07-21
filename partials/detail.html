@@ -1,5 +1,5 @@
 <div class="myPic">
-    <img class="myImage" data-ng-src = '{{p.img.src}}'/>
+    <img class="myImage" id="detailedImage"  data-ng-src = '{{p.img.src}}' col-lg-12/>
 </div>
 
 <div class="productRight">
@@ -12,10 +12,13 @@
         {{p.price | currency}}
     </div>
 
-    <div class="myInfo"> <a href ng-click= "tab = p.info">Info</a>
-        <p>{{tab}}</p>
+    <div class="myInfo"> <a href ng-click= "p.info"></a>
+        <p>{{p.info}}</p>
     </div>
 
-    <button class="btn btn-primary" ng-click="count= count+1">Eat me!</button>
-    <p>{{count}}</p>
+    <button class="btn btn-primary" id="detailedBtn" ng-click="countItems(p)">More!</button>
+    <p>{{countItems(p)}}</p>
+
+    <button class="btn btn-primary" id="detailedBuy" ng-click="addItem(p)">Buy!</button>
+    <p></p>
 </div>

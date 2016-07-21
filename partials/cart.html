@@ -1,1 +1,7 @@
-<h1>you have {{products.count}} items in your cart:)</h1>
+<h1>you have {{p.count}} items in your cart:)</h1>
+<ul>
+
+    <li ng-repeat="p in products | filter : {addedToCart: true}">
+        <div>{{$scope.cart}}</div>
+    </li>
+</ul>
