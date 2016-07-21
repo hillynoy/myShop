@@ -1,7 +1,3 @@
-<h1>you have {{p.count}} items in your cart:)</h1>
-<ul>
 
-    <li ng-repeat="p in products | filter : {addedToCart: true}">
-        <div>{{$scope.cart}}</div>
-    </li>
-</ul>
+
+<div class="" data-ng-repeat="p in cart track by $index">{{p.id}}{{p.img}}</div>
