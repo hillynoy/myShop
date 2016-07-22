@@ -1,3 +1,26 @@
 
 
-<div class="" data-ng-repeat="p in cart track by $index">{{p.id}}{{p.img}}</div>
+<div class="cartProduct" data-ng-repeat="p in cart track by $index">
+    <div class="myPic">
+        <img class="myImage" data-ng-src = '{{p.img.src}}'/>
+    </div>
+
+    <div class="productRight">
+
+        <div class="myTitle">
+            {{p.title}}
+        </div>
+
+        <div class="myPrice">
+            {{p.price | currency}}
+        </div>
+
+
+    </div>
+
+
+</div>
+
+        {{p.id}}
+    {{p.title}}
+    {{p.price}}

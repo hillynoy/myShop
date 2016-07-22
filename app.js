@@ -25,8 +25,7 @@
 
         $http({
             method: 'GET',
-            url: 'https://api.myjson.com/bins/1nrq5'}).then(function successCallback(response) {
-
+            url: 'https://api.myjson.com/bins/20cqh'}).then(function successCallback(response) {
             $scope.products = response.data;
             if ($routeParams.id) {
                 $scope.p = $scope.products.filter(function (item) {

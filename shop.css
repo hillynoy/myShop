@@ -133,3 +133,10 @@ button.btn.btn-primary {
     font-size: 30px;
 
 }
+.cartProduct {
+    font-size: 35px;
+    color: purple;
+    text-align: center;
+    font-family: 'WillyWonka';
+    display: inline-block;
+}
