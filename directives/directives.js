@@ -27,7 +27,7 @@ app.controller("StoreController", function ($scope, $location, $routeParams, $ht
     }
     /*   localStorage.removeItem("cart");
      $scope.cart = [];
-
+    
      if (localStorage.getItem("cart")) {
      $scope.cart = JSON.parse(localStorage.getItem("cart"));
      }*/

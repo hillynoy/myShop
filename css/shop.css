@@ -161,6 +161,10 @@ button.btn.btn-primary {
     transform: translateX(50%);
 }
 
+#detailedBtn span {
+
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
