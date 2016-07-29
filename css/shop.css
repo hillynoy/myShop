@@ -1,0 +1,187 @@
+@font-face {
+    font-family: WillyWonka;
+    src: url('../fonts/WillyWonka.ttf');
+}
+
+body {
+    max-width: 80%;
+}
+
+.myProduct {
+    display: inline-block;
+    width:300px;
+    height: 400px;
+}
+
+img.myImage {
+    display: inline-block;
+    height: 150px;
+    width: auto;
+}
+
+div.myPic {
+    display: inline-block;
+}
+
+.productWrapper {
+    display: block;
+    border-radius: 7%;
+    border: 4px solid #8d75bb;
+    margin: 2%;
+    margin-top: 2%;
+}
+
+.productRight {
+    display: block;
+    text-align: center;
+}
+
+.myPrice{
+    font-size: 125%;
+    max-font-size: 25px;
+    color: #e6ca0f;
+    text-align: center;
+    font-family: 'WillyWonka';
+}
+.myTitle {
+    font-size: 150%;
+    max-font-size: 35px;
+    color: purple;
+    text-align: center;
+    font-family: 'WillyWonka';
+
+}
+
+/*.rightSider {*/
+    /*float: right;*/
+/*display: inline-block;*/
+/*}*/
+
+.mainPage {
+    display: inline-block;
+}
+
+.navBar {
+    margin-bottom: 50px;
+    height: 120px;
+    color: white;
+    z-index: 10;
+}
+
+/*.myBtn {*/
+    /*z-index: 200;*/
+    /*transform: translateY(40%);*/
+    /*background-color: transparent;*/
+    /*border-radius: 10px;*/
+    /*height: 80px;*/
+    /*width: 150px;*/
+    /*margin-right: 20px;*/
+    /*font-size: 24px;*/
+    /*color: white;*/
+
+/*}*/
+
+.myBtn.cart {
+    float: right;
+    height: 90px;
+
+}
+.cart img{
+    height: 65px;
+    margin-top: 110px;
+    margin-left: 248px;
+
+}
+.logo img{
+    height: auto;
+    width: 131%;
+    max-width: 350px;
+}
+
+button.btn.btn-primary {
+    transform: translateX(220%);
+    background-color: #dc1c83;
+    border-color: #dc1c83;
+    color: white;
+    font-family: WillyWonka;
+    margin-bottom: 5%;
+}
+
+#detailedImage {
+    height: auto;
+    width: 106%;
+    transform: translateX(50%);
+}
+
+#detailedBtn {
+    width: 50%;
+    margin: 0 0 10px;
+    text-align: center;
+    transform: translateX(50%);
+    display: inline-block;
+    background-color: white;
+    border-color: #dc1c83;
+    color: #dc1c83;
+    border-radius: 10px;
+    font-family: WillyWonka;
+    height: 100%;
+    width: auto;
+    font-size: 130%;
+}
+#detailedBuy {
+    width: 50%;
+    margin: 0 0 10px;
+    text-align: center;
+    transform: translateX(50%);
+    display: inline-block;
+    background-color: #dc1c83;
+    border-color: #dc1c83;
+    color: white;
+    border-radius: 10px;
+    font-family: WillyWonka;
+    height: 100%;
+    width: auto;
+    font-size: 130%;
+
+}
+.cartProduct {
+    font-size: 35px;
+    color: purple;
+    text-align: center;
+    font-family: 'WillyWonka';
+    display: inline-block;
+}
+.mainPage.col-lg-12 {
+    width: 110%;
+}
+.myInfo p {
+    width: 50%;
+    margin: 0 0 10px;
+    text-align: center;
+    transform: translateX(50%);
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

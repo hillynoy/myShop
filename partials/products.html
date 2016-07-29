@@ -1,4 +1,4 @@
-<ul>
+<ul class="productRow col-lg-12">
     <li class="myProduct" data-ng-repeat= "p in products">
         <a href="#/{{p.id}}">
             <div class="productWrapper" col-lg-4>
@@ -18,8 +18,9 @@
 </span>
                 <p></p>
             </div>
+                <button class="btn btn-primary"  ng-click="addItem(p)">Buy!</button>
         </div>
         </a>
-        <button class="btn btn-primary"  ng-click="addItem(p)">Buy!</button>
+
     </li>
 </ul>
